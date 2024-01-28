@@ -1,7 +1,6 @@
 <?php
     session_start();
     $_SESSION["login"] = false;
-    
 ?>
 <!DOCTYPE html>
 <html>
@@ -25,5 +24,11 @@
                 }
             ?>
         </header>
+        <div id="main-content">
+
+        </div>
+        <footer>
+            
+        </footer>
     </body>
 </html>
