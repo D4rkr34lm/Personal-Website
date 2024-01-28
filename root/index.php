@@ -25,10 +25,17 @@
             ?>
         </header>
         <div id="main-content">
-
+            <?php 
+                $navs = [
+                    "publications" => "",
+                    "projects" => ""
+                ];
+                if(array_key_exists("goto", $_GET))
+                    include $navs[$_GET["goto"]];
+            ?>
         </div>
         <footer>
-            
+
         </footer>
     </body>
 </html>
