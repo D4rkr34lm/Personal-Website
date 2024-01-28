@@ -1,3 +1,50 @@
-nav{
+:root{
+    --c5: #242038;
+    --c4: #9067c6;
+    --c3: #8d86c9;
+    --c2: #cac4ce;
+    --c1: #f7ece1;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: var(--c1);
+    padding: 20;
+}
+
+header{
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--c3);
     
+    border-color: var(--c5);
+    border-width: 2px;
+    border-style: solid;
+}
+
+h1{
+    text-align: center;
+    font-size: 4vw;
+}
+
+nav{
+    display: flex;
+
+    border-top-color: var(--c5);
+    border-top-width: 2px;
+    border-top-style: solid;
+}
+
+nav a{
+    font-size: 3vw;
+    flex-grow: 1;
+    text-align: center;
+
+    padding: 5px;
+}
+
+nav a:hover{
+    background-color: #6e699a;
 }

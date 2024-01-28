@@ -1,24 +1,29 @@
 <?php
     session_start();
+    $_SESSION["login"] = false;
+    
 ?>
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Manuel Frohn's Webside</title>
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <h1> Manuel Frohn's personliche Webside</h1>
-        <nav id="public-nav">
-            <a>Publications</a>
-            <a>Projects</a>
-        </nav>
-        <?php
-            if($_SESSION["login"] == true) {
-                echo 
-                "<nav id='private-nav'>
-                    <a>Taskmanager</a>
-                </nav>";
-            }
-        ?>
+        <header>
+            <h1>Manuel Frohn's Webside</h1>
+            <nav id="public-nav">
+                <a>Publications</a>
+                <a>Projects</a>
+            </nav>
+            <?php
+                if($_SESSION["login"]) {
+                    echo 
+                    "<nav id='private-nav'>
+                        <a>Taskmanager</a>
+                    </nav>";
+                }
+            ?>
+        </header>
     </body>
 </html>
