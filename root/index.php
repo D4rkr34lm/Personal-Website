@@ -12,6 +12,7 @@
         <header>
             <h1>Manuel Frohn's Webside</h1>
             <nav id="public-nav">
+                <a>Home</a>
                 <a>Publications</a>
                 <a>Projects</a>
             </nav>
