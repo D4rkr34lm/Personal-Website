@@ -11,11 +11,6 @@
     <body>
         <header>
             <h1>Manuel Frohn's Webside</h1>
-            <nav id="public-nav">
-                <a>Home</a>
-                <a>Publications</a>
-                <a>Projects</a>
-            </nav>
             <?php
                 if($_SESSION["login"]) {
                     echo 
@@ -24,6 +19,11 @@
                     </nav>";
                 }
             ?>
+            <nav id="public-nav">
+                <a id="left-corner-nav">Home</a>
+                <a>Publications</a>
+                <a id="right-corner-nav">Projects</a>
+            </nav>
         </header>
         <div id="main-content">
             <?php 
